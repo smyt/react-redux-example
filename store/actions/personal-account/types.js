@@ -1,0 +1,50 @@
+/**
+ * Action types for personal-account module actions
+ */
+
+import createRequestTypes from '../utils'
+
+/**
+ * Personal account filter action types
+ */
+export const TOGGLE_COLLAPSE_FILTER_LIST = 'TOGGLE_COLLAPSE_FILTER_LIST'
+export const TOGGLE_COLLAPSE_FILTER = 'TOGGLE_COLLAPSE_FILTER'
+export const SELECT_FILTER_ITEM_SELECTION = 'SELECT_FILTER_ITEM_SELECTION'
+export const DESELECT_FILTER_ITEM_SELECTION = 'DESELECT_FILTER_ITEM_SELECTION'
+export const SHOW_MORE_ITEMS = 'SHOW_MORE_ITEMS'
+
+/**
+ * Loading positions action types
+ */
+export const POSITIONS = createRequestTypes('POSITIONS')
+export const CHANGE_POSITIONS_LIST_PAGE = 'CHANGE_POSITIONS_LIST_PAGE'
+export const CHANGE_POSITIONS_ITEMS_PER_PAGE = 'CHANGE_POSITIONS_ITEMS_PER_PAGE'
+export const CHANGE_POSITIONS_LIST_SORT_ORDER = 'CHANGE_POSITIONS_LIST_SORT_ORDER'
+
+/**
+ * Statuses modal window actions
+ */
+export const STATUSES = createRequestTypes('STATUSES')
+export const OPEN_STATUSES_MODAL = 'OPEN_STATUSES_MODAL'
+export const CLOSE_STATUSES_MODAL = 'CLOSE_STATUSES_MODAL'
+export const OPEN_STATUS_HISTORY_MODAL = 'OPEN_STATUS_HISTORY_MODAL'
+export const CLOSE_STATUS_HISTORY_MODAL = 'CLOSE_STATUS_HISTORY_MODAL'
+
+/**
+ * Requirements modal window actions
+ */
+export const POSITION = createRequestTypes('POSITION')
+export const OPEN_POSITION_VIEW_MODAL = 'OPEN_POSITION_VIEW_MODAL'
+export const CLOSE_POSITION_VIEW_MODAL = 'CLOSE_POSITION_VIEW_MODAL'
+export const RESET_CURRENT_POSITION = 'RESET_CURRENT_POSITION'
+
+/**
+ * Suggest candidate
+ */
+export const SAVE_SUGGESTION = createRequestTypes('SUGGESTION')
+export const ADD_SUGGESTION = 'ADD_SUGGESTION'
+export const CANCEL_SUGGESTION = 'CANCEL_SUGGESTION'
+export const TRY_MINIMIZE_SUGGESTION = 'TRY_MINIMIZE_SUGGESTION'
+export const MINIMIZE_SUGGESTION = 'MINIMIZE_SUGGESTION'
+export const TRY_MAXIMIZE_SUGGESTION = 'TRY_MAXIMIZE_SUGGESTION'
+export const MAXIMIZE_SUGGESTION = 'MAXIMIZE_SUGGESTION'
